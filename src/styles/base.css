@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 11 13 18;
+  --panel: 20 25 39;
+  --text: 247 247 248;
+  --muted: 215 217 223;
+  --accent: 239 35 60;
+  --accent-2: 255 59 92;
+  --ring: 239 35 60;
+
+  --radius: 18px;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 0 1px rgba(239, 35, 60, 0.25), 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IBM Plex Sans Arabic", "Cairo", ui-sans-serif, system-ui;
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="en"] body {
+  font-family: Inter, ui-sans-serif, system-ui;
+}
+
+::selection {
+  background: rgba(239, 35, 60, 0.35);
+}
+
+.skip-link {
+  position: fixed;
+  inset-inline-start: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  transform: translateY(-160%);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: rgba(20, 25, 39, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-soft);
+  transition: transform 220ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--ring), 0.35), var(--shadow-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .container-pro {
+    @apply container max-w-7xl;
+  }
+
+  .panel {
+    @apply rounded-2xl border border-white/10 bg-ink-850/70 backdrop-blur;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .card {
+    @apply rounded-2xl border border-white/10 bg-ink-850/70 backdrop-blur;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-bone-100;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold tracking-tight transition duration-300 ease-premium;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-blood-500/60 focus-visible:ring-offset-0;
+  }
+
+  .btn-primary {
+    @apply btn bg-blood-600 text-white shadow-glow hover:bg-blood-500;
+  }
+
+  .btn-ghost {
+    @apply btn border border-white/10 bg-white/0 text-bone-50 hover:bg-white/5;
+  }
+
+  .link-subtle {
+    @apply text-bone-100/80 underline decoration-white/20 underline-offset-4 hover:text-bone-50 hover:decoration-blood-500/70;
+  }
+
+  .h1-cinematic {
+    @apply text-4xl font-bold leading-[1.15] tracking-tight sm:text-5xl lg:text-6xl;
+  }
+
+  .p-muted {
+    @apply text-bone-100/80 leading-relaxed;
+  }
+
+  .logo-blend {
+    @apply bg-gradient-to-l from-blood-500 via-blood-400 to-white bg-clip-text text-transparent;
+  }
+
+  .grain {
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,.08) 0, rgba(255,255,255,0) 45%),
+      radial-gradient(circle at 70% 30%, rgba(239,35,60,.10) 0, rgba(239,35,60,0) 55%),
+      radial-gradient(circle at 30% 70%, rgba(255,255,255,.06) 0, rgba(255,255,255,0) 50%),
+      repeating-linear-gradient(0deg, rgba(255,255,255,.03), rgba(255,255,255,.03) 1px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 6px);
+    mix-blend-mode: overlay;
+    opacity: .22;
+    filter: contrast(110%);
+  }
+
+  .hairline {
+    @apply h-px w-full bg-gradient-to-l from-transparent via-white/15 to-transparent;
+  }
+}
+
+

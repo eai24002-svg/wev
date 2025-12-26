@@ -1,0 +1,268 @@
+export type Locale = 'ar' | 'en'
+
+export type Messages = Record<string, string>
+
+export const messages: Record<Locale, Messages> = {
+  ar: {
+    // Global
+    'brand.nameBold': 'AHMED SAADOON',
+    'brand.nameRefined': 'PRODUCTION STUDIO',
+    'global.requestQuote': 'اطلب عرض سعر',
+    'global.viewWorks': 'شاهد الأعمال',
+    'global.whatsapp': 'واتساب',
+    'global.quickWhatsapp': 'واتساب سريع',
+    'global.call': 'اتصال',
+    'global.email': 'بريد',
+    'global.close': 'إغلاق',
+    'global.location': 'الموقع',
+    'global.director': 'المدير',
+    'global.hours': 'ساعات الدوام',
+    'global.addressValue': 'بغداد - السيدية - شارع 40',
+    'global.directorValue': 'احمد سعدون',
+    'global.hoursValue': 'كل أيام الأسبوع عدا الجمعة، من الساعة 2:00 إلى 10:00 مساءً',
+    'global.founded': 'تأسست عام 2012',
+    'global.foundedInline': 'تأسست عام 2012 في بغداد - السيدية',
+    'global.teamSize': 'فريق من 13 متخصصاً',
+    'global.clients200': 'أكثر من 200 عميل',
+
+    // Nav
+    'nav.home': 'الرئيسية',
+    'nav.about': 'من نحن',
+    'nav.services': 'الخدمات',
+    'nav.portfolio': 'الأعمال',
+    'nav.team': 'الفريق',
+    'nav.contact': 'تواصل',
+    'nav.openMenu': 'فتح القائمة',
+    'nav.backHome': 'العودة إلى الرئيسية',
+    'nav.mobileMenu': 'قائمة الهاتف',
+
+    // Footer
+    'footer.blurb':
+      'استوديو إنتاج وتسويق محتوى في بغداد — تأسس عام 2012 في السيدية لتقديم كل ما يخص عالم التسويق والإنتاج على منصات التواصل الاجتماعي. نخدم أكثر من 200 عميل بجودة عالية وأفكار مبتكرة تسهم في زيادة المبيعات ورفع الوعي.',
+    'footer.nav': 'التنقل',
+    'footer.coreServices': 'الخدمات الأساسية',
+    'footer.workInfo': 'معلومات العمل',
+    'footer.core1': 'قسم التسويق: استراتيجيات + حملات + كتابة محتوى',
+    'footer.core2': 'قسم التصوير: منتجات + مؤتمرات + إعلانات',
+    'footer.core3': 'قسم الإنتاج: فيديوات احترافية + صور عالية الجودة',
+    'footer.core4': 'قسم التصميم: شعارات + هوية + منشورات سوشيال',
+    'footer.core5': 'إدارة الصفحات + إدارة الترويج + إعلانات خارجية',
+    'footer.rights': 'جميع الحقوق محفوظة.',
+    'footer.note': 'واجهة RTL عربية — أداء سريع + انتقالات + Motion System جاهز للإنتاج.',
+
+    // Router meta
+    'meta.home.title': 'الرئيسية — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.home.desc':
+      'استوديو إنتاج وتسويق محتوى في بغداد — تأسس عام 2012 لتقديم إنتاج سينمائي وتسويق محتوى على منصات التواصل: تصوير، مونتاج، تدرّج لوني، واستوديو.',
+    'meta.about.title': 'من نحن — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.about.desc': 'قصة الاستوديو، قيمنا، إمكانياتنا، محطاتنا، وشراكاتنا في مجال الإنتاج الإعلامي.',
+    'meta.services.title': 'الخدمات — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.services.desc': 'خدمات تصوير، مونتاج، تدرّج لوني، تصوير استوديو، وإنتاج إعلانات ووثائقيات ومحتوى سوشيال.',
+    'meta.portfolio.title': 'الأعمال — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.portfolio.desc': 'نماذج أعمالنا مصنفة حسب النوع: إعلانات، مناسبات، شركات، سوشيال، واستوديو.',
+    'meta.team.title': 'فريقنا — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.team.desc': 'فريق إنتاج متكامل: تصوير، مونتاج، تلوين، إدارة مواقع، وإخراج.',
+    'meta.contact.title': 'تواصل معنا — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.contact.desc': 'احجز موعداً أو اطلب عرض سعر — تواصل سريع عبر الاتصال أو واتساب أو البريد.',
+    'meta.notfound.title': 'غير موجود — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.notfound.desc': 'الصفحة المطلوبة غير موجودة.',
+
+    // Home hero
+    'hero.kicker': 'استوديو إنتاج إعلامي بمعايير سينمائية',
+    'hero.line1': 'نصنع قصصاً تُشاهد',
+    'hero.desc':
+      'تأسسنا عام 2012 في بغداد - السيدية لنقدم التسويق والإنتاج لمنصات التواصل: تصوير، مونتاج، تدرّج لوني، تصوير استوديو، وإنتاج إعلانات ووثائقيات ومناسبات — من الفكرة إلى التسليم.',
+    'hero.card1.k': 'جودة',
+    'hero.card1.v': 'مظهر سينمائي + تسليم نظيف',
+    'hero.card2.k': 'سرعة',
+    'hero.card2.v': 'جداول واضحة + مراجعات منظمة',
+    'hero.card3.k': 'تناسق',
+    'hero.card3.v': 'هوية بصرية ثابتة عبر الحملات',
+    'hero.poster.k': 'إحساس الفيديو',
+    'hero.poster.v': 'واجهة بصرية للأعمال',
+
+    // Common section titles
+    'section.trust.kicker': 'ثقة طويلة المدى',
+    'section.trust.title': 'شركاء وتعاونات',
+    'section.stats.kicker': 'أرقام تتكلم',
+    'section.stats.title': 'نتائج قابلة للقياس',
+    'section.stats.subtitle': 'مؤشرات مختصرة تعكس حجم العمل والانضباط في التسليم.',
+    'section.services.kicker': 'خدمات متكاملة',
+    'section.services.title': 'ماذا نقدم؟',
+    'section.services.subtitle': 'من تصوير المواقع إلى ما بعد الإنتاج — فريقنا يعمل كمنظومة واحدة لتقديم نتيجة نهائية متماسكة بصرياً.',
+    'section.process.kicker': 'العملية',
+    'section.process.title': 'من الفكرة إلى التسليم',
+    'section.process.subtitle': 'إنتاج منظم يضمن الجودة ويقلل التعديلات المتكررة. كل مرحلة تنتهي بمخرجات قابلة للمراجعة.',
+    'section.works.kicker': 'الأعمال',
+    'section.works.title': 'مختارات سريعة',
+    'section.works.subtitle': 'مجموعة مختارة من أعمالنا المميزة',
+    'section.testimonials.kicker': 'آراء العملاء',
+    'section.testimonials.title': 'لماذا يكرر العملاء العمل معنا؟',
+    'section.testimonials.subtitle': 'تقييمات مختصرة بأسلوب واقعي',
+    'section.faq.kicker': 'أسئلة شائعة',
+    'section.faq.title': 'قبل أن تبدأ…',
+    'section.faq.subtitle': 'إجابات مباشرة تساعدك على اتخاذ القرار بسرعة. إذا كان لديك سؤال مختلف، تواصل معنا وسنرد فوراً.',
+    'section.cta.kicker': 'حجز وإنتاج سريع',
+    'section.cta.title': 'جاهز لمشروعك القادم؟ خلّينا نحوله لفيديو “يمثل علامتك”.',
+    'section.cta.desc':
+      'ارسل فكرة المشروع، نوع المحتوى، المنصة المستهدفة، والموعد المطلوب. سنعود لك بخطة مختصرة + مسار عمل + مقترح باقة مناسب. الأسعار تختلف حسب التصوير/عدد الأيام/عدد النسخ/المراجعات — لذلك نفضل عرض سعر واضح بعد معرفة التفاصيل.',
+
+    // Contact
+    'contact.kicker': 'تواصل',
+    'contact.title': 'تواصل معنا',
+    'contact.subtitle': 'أرسل تفاصيل مشروعك وسنرد عليك بسرعة.',
+    'contact.formTitle': 'نموذج الطلب',
+    'contact.formHint':
+      'اكتب تفاصيل واضحة: نوع الخدمة، الموعد، المنصات، وهدف الفيديو. كلما كان brief أدق، كان عرض السعر أدق.',
+    'contact.name': 'الاسم',
+    'contact.email': 'البريد الإلكتروني',
+    'contact.serviceType': 'نوع الخدمة',
+    'contact.details': 'تفاصيل المشروع',
+    'contact.submit': 'إرسال الطلب',
+    'contact.sending': 'جارٍ الإرسال...',
+    'contact.success': 'تم إرسال طلبك بنجاح. سنتواصل معك قريباً.',
+    'contact.mapTitle': 'الموقع على الخريطة',
+    'contact.mapMain': 'افتح في Waze',
+    'contact.mapDesc': 'انقر للوصول إلى موقعنا عبر تطبيق Waze',
+    'validation.name': 'رجاءً اكتب اسمك (حرفين على الأقل).',
+    'validation.email': 'رجاءً أدخل بريد إلكتروني صحيح.',
+    'validation.message': 'رجاءً اكتب تفاصيل أكثر (12 حرفاً على الأقل).',
+
+    // About (new factual copy)
+    'about.story.h': 'تأسسنا عام 2012 في بغداد - السيدية',
+    'about.story.p':
+      'منذ 2012 ونحن نرافق العلامات في رحلة الصعود والنجاح عبر التسويق والإنتاج لمنصات التواصل الاجتماعي. نخدم أكثر من 200 عميل بجودة محتوى عالية وأفكار مبتكرة تسهم في زيادة المبيعات ورفع الوعي — ويعمل فريقنا المكوّن من 13 متخصصاً بشغف لتحقيق أهداف عملائنا.',
+  },
+
+  en: {
+    // Global
+    'brand.nameBold': 'AHMED SAADOON',
+    'brand.nameRefined': 'PRODUCTION STUDIO',
+    'global.requestQuote': 'Request a Quote',
+    'global.viewWorks': 'View Works',
+    'global.whatsapp': 'WhatsApp',
+    'global.quickWhatsapp': 'Quick WhatsApp',
+    'global.call': 'Call',
+    'global.email': 'Email',
+    'global.close': 'Close',
+    'global.location': 'Location',
+    'global.director': 'Company Director',
+    'global.hours': 'Opening Hours',
+    'global.addressValue': 'Baghdad — Al-Saydiya — Street 40',
+    'global.directorValue': 'Ahmed Saadoon',
+    'global.hoursValue': 'Every day except Friday, from 2:00 PM to 10:00 PM',
+    'global.founded': 'Founded in 2012',
+    'global.foundedInline': 'Founded in 2012 in Baghdad — Al-Saydiya',
+    'global.teamSize': 'A team of 13 specialists',
+    'global.clients200': '200+ clients',
+
+    // Nav
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.services': 'Services',
+    'nav.portfolio': 'Portfolio',
+    'nav.team': 'Team',
+    'nav.contact': 'Contact',
+    'nav.openMenu': 'Open menu',
+    'nav.backHome': 'Back to home',
+    'nav.mobileMenu': 'Mobile menu',
+
+    // Footer
+    'footer.blurb':
+      'A content marketing & production studio in Baghdad — founded in 2012 in Al‑Saydiya to deliver everything across social platforms. We’ve served 200+ clients with high-quality content and innovative ideas that increase sales and raise awareness.',
+    'footer.nav': 'Navigation',
+    'footer.coreServices': 'Core Services',
+    'footer.workInfo': 'Business Info',
+    'footer.core1': 'Marketing: strategies + campaigns + ad copy',
+    'footer.core2': 'Filming: products + conferences + commercials',
+    'footer.core3': 'Production: professional videos + high-quality photos',
+    'footer.core4': 'Design: logos + brand identity + social posts',
+    'footer.core5': 'Page management + promotion + outdoor advertising',
+    'footer.rights': 'All rights reserved.',
+    'footer.note': 'Bilingual UI — fast + accessible + transitions + premium motion system.',
+
+    // Router meta
+    'meta.home.title': 'Home — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.home.desc':
+      'A content marketing & production studio in Baghdad — founded in 2012 for social-first production: filming, editing, color grading, and studio shoots with a cinematic feel.',
+    'meta.about.title': 'About — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.about.desc': 'Our story, values, capabilities, milestones, and partnerships in media production.',
+    'meta.services.title': 'Services — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.services.desc': 'Filming, editing, color grading, studio shooting, commercials, documentaries, and social content.',
+    'meta.portfolio.title': 'Portfolio — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.portfolio.desc': 'Selected works by category: commercials, events, corporate, social, and studio.',
+    'meta.team.title': 'Team — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.team.desc': 'A complete production team: filming, editing, grading, and direction.',
+    'meta.contact.title': 'Contact — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.contact.desc': 'Book a meeting or request a quote — quick contact via call, WhatsApp, or email.',
+    'meta.notfound.title': 'Not Found — AHMED SAADOON PRODUCTION STUDIO',
+    'meta.notfound.desc': 'The requested page could not be found.',
+
+    // Home hero
+    'hero.kicker': 'Cinematic, broadcast-grade media production',
+    'hero.line1': 'We craft stories worth watching',
+    'hero.desc':
+      'Founded in 2012 in Baghdad (Al‑Saydiya) — delivering social-first marketing and production: filming, editing, color grading, studio shoots, commercials, documentaries, and events — from concept to delivery.',
+    'hero.card1.k': 'Quality',
+    'hero.card1.v': 'Cinematic look + clean delivery',
+    'hero.card2.k': 'Speed',
+    'hero.card2.v': 'Clear timelines + structured reviews',
+    'hero.card3.k': 'Consistency',
+    'hero.card3.v': 'A cohesive visual identity across campaigns',
+    'hero.poster.k': 'Video feel',
+    'hero.poster.v': 'Visual showcase of our work',
+
+    // Common section titles
+    'section.trust.kicker': 'Long-term trust',
+    'section.trust.title': 'Partners & Collaborations',
+    'section.stats.kicker': 'Numbers that matter',
+    'section.stats.title': 'Measurable outcomes',
+    'section.stats.subtitle': 'High-level indicators of scale and delivery discipline.',
+    'section.services.kicker': 'Full-service',
+    'section.services.title': 'What we do',
+    'section.services.subtitle': 'From set to post — one system, one standard, one consistent final look.',
+    'section.process.kicker': 'Process',
+    'section.process.title': 'From concept to delivery',
+    'section.process.subtitle': 'A structured workflow that protects quality and cuts wasted revisions.',
+    'section.works.kicker': 'Works',
+    'section.works.title': 'Quick highlights',
+    'section.works.subtitle': 'A curated selection of our featured work',
+    'section.testimonials.kicker': 'Testimonials',
+    'section.testimonials.title': 'Why clients come back',
+    'section.testimonials.subtitle': 'Realistic-style testimonials',
+    'section.faq.kicker': 'FAQ',
+    'section.faq.title': 'Before you start…',
+    'section.faq.subtitle': 'Fast answers to common questions. If you have something specific, message us.',
+    'section.cta.kicker': 'Booking',
+    'section.cta.title': 'Ready for your next project? Let’s make it look premium.',
+    'section.cta.desc':
+      'Send your project idea, content type, target platforms, and deadline. We’ll reply with a short plan + workflow + the right package suggestion. Pricing varies by shoot days/versions/revisions — so we quote precisely after details.',
+
+    // Contact
+    'contact.kicker': 'Contact',
+    'contact.title': 'Get in touch',
+    'contact.subtitle': 'Send your project details and we will respond quickly.',
+    'contact.formTitle': 'Request form',
+    'contact.formHint': 'Share the service type, deadline, platforms, and the goal. Better brief = better quote.',
+    'contact.name': 'Name',
+    'contact.email': 'Email',
+    'contact.serviceType': 'Service type',
+    'contact.details': 'Project details',
+    'contact.submit': 'Send request',
+    'contact.sending': 'Sending...',
+    'contact.success': 'Your request has been sent successfully. We will contact you soon.',
+    'contact.mapTitle': 'Location on Map',
+    'contact.mapMain': 'Open in Waze',
+    'contact.mapDesc': 'Click to get directions via Waze app',
+    'validation.name': 'Please enter your name (at least 2 characters).',
+    'validation.email': 'Please enter a valid email address.',
+    'validation.message': 'Please add more details (at least 12 characters).',
+
+    // About (new factual copy)
+    'about.story.h': 'Founded in 2012 in Baghdad — Al‑Saydiya',
+    'about.story.p':
+      "Since 2012, we've been a partner in our clients' journey of growth and success through social-first marketing and production. We've served 200+ clients with high-quality content and innovative ideas that increase sales and raise awareness — powered by a team of 13 specialists working with real passion.",
+  },
+}
+
+
